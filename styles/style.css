@@ -1,0 +1,240 @@
+/* Work sans google font  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+/*----------------------
+ common styel start here
+ ----------------------*/
+ *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ body{
+    font-family: 'Work Sans', sans-serif;
+ }
+ .container{
+     max-width: 1140px;
+     margin: 0 auto;
+ }
+ .common-btn{
+    background-color:#FF900E;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    color:#FFFFFF;
+}
+ .responsive-img{
+     width: 100%;
+     height: auto; 
+ }
+ .text-center{
+     text-align: center;
+ }
+/*----------------------
+ common styel end here
+ ----------------------*/
+
+
+
+
+/*----------------------
+ header styel start here
+ ----------------------*/
+ /* navber  */
+ .hero{
+    background: rgba(255, 144, 14, 0.1);
+ }
+ .header{
+     /* margin-top: 50px; */
+ }
+ .navber{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 30px 60px;
+     /* margin-top: 80px; */
+ }
+ .navber__logo{
+    font-weight: 700;
+    font-size: 45px;
+ }
+ .navber__menu ul{
+     display: flex;
+     gap: 30px
+ }
+ .navber__menu li{
+     list-style-type: none;
+ }
+ .navber__menu li a{
+     text-decoration: none;
+     color: #424242;
+ }
+
+ /* banner  */
+ .banner{
+    margin-top: 60px;
+    margin-bottom: 100px;
+ }
+ .banner__top{
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+     text-align: center;
+     padding: 0 60px;
+ }
+ .banner__top--title{
+     font-size: 64px;
+     font-weight: 700;
+     color: #131313;
+ }
+ .banner__top--text{
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+ }
+ 
+ .banner__bottom{
+     margin-top: 50px;
+ }
+ .banner__bottom--img{
+     width: 80%;
+     display: block;
+     margin: 0 auto;
+     padding: 30px 0;
+ }
+/*----------------------
+ header styel end here
+ ----------------------*/
+
+
+
+
+
+
+/*----------------------
+ main styel start here
+ ----------------------*/
+ /* feature  */
+ .features{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     align-items: center;
+     gap: 50px;
+     padding: 0 30px;
+     margin-bottom: 80px;
+ }
+ .features__left{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(2, 1fr);
+     gap: 18px;
+ }
+ .features__left--img{
+     width: 80%;
+     height: auto;
+ }
+ .features__right{
+    display: grid;
+    gap: 30px;
+ }
+ .features__right--title{
+     font-size: 45px;
+ }
+ .features__right--title .q{
+     color: #727272;
+     font-weight: 500;
+ }
+ .features__right--title .of {
+     font-weight: 700;
+     color: #131313;
+ }
+ .features__right--title .f{
+     color:#FF900E;
+     font-weight: 700;
+ }
+ .features__right--text{
+     font-weight: 400;
+     line-height: 26px;
+     font-size: 16px;
+     color: #727272;
+ }
+/*----------------------
+ main styel end here
+ ----------------------*/
+
+
+
+
+
+
+
+
+/*----------------------
+ media quary styel start here
+ ----------------------*/
+@media screen and (max-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
+}
+@media screen and (max-width: 1024) {
+    .container{
+        max-width: 740px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 500px;
+    }
+     /* navber  */
+     .navber{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .navber__logo{
+        font-weight: 500;
+        font-size: 30px;
+     }
+     .navber__menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    /* banner  */
+    .banner__top--title{
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+
+    /* feature  */
+    .hide{
+        display: none;
+    }
+    .features{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .features__left{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+}
+.features__right{
+    text-align: center;
+}
+.common-btn{
+    font-size: 15px;
+    padding: 15px 20px;
+}
+@media screen and (max-width: 568px) {
+    .container{
+        max-width: 90%;
+    }
+   
+}
+/*----------------------
+ media quary styel end here
+ ----------------------*/
