@@ -160,8 +160,80 @@
      font-size: 16px;
      color: #727272;
  }
-/*----------------------
- main styel end here
+
+
+ /* featuresloves  */
+ .featureloves{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     align-items: center;
+     gap: 75px;
+     padding: 0 15px;
+     margin-bottom: 100px;
+ }
+ .featureloves__left{
+
+ }
+ .featureloves__left--title{
+     font-weight: 700;
+     font-size: 45px;
+     border-left: 4px solid #FF900E;
+     padding-left: 10px;
+    }
+    .featureloves__left--text{
+        font-weight: 400;
+        font-size: 16px;
+        color: #727272;
+        line-height: 26px;
+        margin-top: 20px;
+        margin-bottom: 18px;
+    }
+
+
+    /* featuresloves card */
+    .featureloves__left--cards{
+        display: grid;
+        gap: 20px;
+    }
+.featureloves__left--card{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 15px;
+}
+.featureloves__left--card--title{
+    font-weight: 600;
+    font-size: 20px;
+    color: #131313;
+}
+.featureloves__left--card--text{
+    font-weight: 400;
+    font-size: 16;
+    line-height: 26px;
+    color: #727272;
+}
+.featureloves__right--img img{
+    z-index: -1;
+}
+    
+.box{
+    width: 200px;
+    height: 120px;
+    border-radius: 8px;
+    background-color: #FF900E;
+    padding: 20px;
+    color: white;
+    position: absolute;
+    left: 745px;
+    top: 2600px;
+    text-align: center;
+    z-index: 1;
+}
+.box .titel{
+    font-size: 40px;
+    font-weight: 500
+    
+}
+    /*----------------------
+    main styel end here
  ----------------------*/
 
 
@@ -221,7 +293,22 @@
     .features__left{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    
+    /* feature love  */
+    .featureloves{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box{
+        top: 4500px;
+        left: 205px;
+    }
+    /* .box{
+        position: relative;
+    } */
+    
 }
+
 .features__right{
     text-align: center;
 }
